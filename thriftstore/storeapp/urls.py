@@ -4,6 +4,9 @@ from storeapp.views import *
 
 
 urlpatterns = [
-    path('accounts/login/', ),
-    path('accounts/logout/', include('storeapp.urls')),
+    path('', index, name='index'),
+    path('login/', login_user, name='login'),
+    path('logout/', logout_user, name='logout'),
+    path('register/', register_user, name='register'),
+    # path('accounts/logout/', include('storeapp.urls')),
 ]
