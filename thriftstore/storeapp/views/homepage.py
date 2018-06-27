@@ -40,3 +40,60 @@ def register_user(request):
             return redirect('index')
     else:
         return render(request, 'register.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+
+def basket(request):
+    return render(request, 'basket.html')
+
+def category(request):
+    return render(request, 'category.html')
+
+def detail(request):
+    return render(request, 'detail.html')
+
+def blog(request):
+    return render(request, 'blog.html')
+
+def post(request):
+    return render(request, 'post.html')
+
+def text(request):
+    return render(request, 'text.html')
+
+def text_right(request):
+    return render(request, 'text-right.html')
+
+def faq(request):
+    return render(request, 'faq.html')
+
+def men(request):
+    return render(request, 'men.html')
+
+def women(request):
+    return render(request, 'women.html')
+
+def not_found_404(request):
+    return render(request, '404.html')
+
+def category_right(request):
+    return render(request, 'category-right.html')
+
+def category_full(request):
+    return render(request, 'category-full.html')
+
+def customer_order(request):
+    return render(request, 'customer-order.html')
+
+def customer_orders(request):
+    return render(request, 'customer-orders.html')
+
+def customer_wishlist(request):
+    return render(request, 'customer-wishlist.html')
+
+def customer_account(request):
+    return render(request, 'customer-account.html')
+
+def checkout(request, no):
+    return render(request, 'checkout{0}.html'.format(no))
